@@ -22,9 +22,9 @@ curl --location --request GET 'https://d5dg1j9kt695d30blp03.apigw.yandexcloud.ne
 --header 'X-Project: True' \
 --header 'X-API-KEY: {{ api_key }}' 
 ```
-Пока отчёт будет формироваться, будет возвращаться статус RUNNING. 
-Если отчёт сформирован, то метод вернёт статус SUCCESS и report_id. 
-Сформированный отчёт содержит четыре файла: custom_research.csv, user_order_log.csv, user_activity_log.csv, price_log.csv.
+Пока отчёт будет формироваться, будет возвращаться статус RUNNING. </br>
+Если отчёт сформирован, то метод вернёт статус SUCCESS и report_id. </br>
+Сформированный отчёт содержит четыре файла: custom_research.csv, user_order_log.csv, user_activity_log.csv, price_log.csv. </br>
 Файлы отчетов можно получить по URL из параметра s3_path или сформировать URL самостоятельно по следующему шаблону:
 ```
 https://storage.yandexcloud.net/s3-sprint3/cohort_{{ cohort_number }}/{{ nickname }}/project/{{ report_id }}/{{ file_name }}
