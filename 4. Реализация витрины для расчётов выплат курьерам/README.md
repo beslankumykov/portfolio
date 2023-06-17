@@ -18,8 +18,9 @@
 Данные курьерской службы вам необходимо забрать из API курьерской службы, после чего совместить их с данными подсистемы заказов.
 
 ## Спецификация API
-```bash
+
 Метод **GET /restaurants** возвращает список доступных ресторанов. Пример вызова:
+```bash
 curl --location --request GET 'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.net/restaurants?sort_field={{ sort_field }}&sort_direction={{ sort_direction }}&limit={{ limit }}&offset={{ offset }}' \
 --header 'X-Nickname: {{ nickname }}' \
 --header 'X-Cohort: {{ cohort_number }}' \
