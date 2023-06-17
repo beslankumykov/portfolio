@@ -70,3 +70,8 @@ curl --location --request GET 'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.ne
 - rate — рейтинг доставки, который выставляет покупатель: целочисленное значение от 1 до 5;
 - sum — сумма заказа (в руб.);
 - tip_sum — сумма чаевых, которые оставил покупатель курьеру (в руб.).
+
+## Схема данных DWH
+
+![snowflake](https://github.com/beslankumykov/portfolio/assets/87646293/d47ee497-5fc0-45bf-830c-cbac865a7bfb)
+
