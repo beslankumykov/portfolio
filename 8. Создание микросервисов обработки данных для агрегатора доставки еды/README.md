@@ -9,3 +9,6 @@
 3. Развернуть образ в Kubernetes
 4. Проверить с помощью kubectl, что сервис поднялся
 5. Убедиться, что таблицы в Postgres заполняются данными
+
+## Модель детального слоя
+![Image (2)](https://github.com/beslankumykov/portfolio/assets/87646293/bd479fae-29da-4f6a-b8b9-a093d5d0ba61)
