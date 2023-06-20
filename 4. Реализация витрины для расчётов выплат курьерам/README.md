@@ -21,7 +21,7 @@
 
 Метод **GET /restaurants** возвращает список доступных ресторанов. Пример вызова:
 ```bash
-curl --location --request GET 'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.net/restaurants?sort_field={{ sort_field }}&sort_direction={{ sort_direction }}&limit={{ limit }}&offset={{ offset }}' \
+curl --location --request GET 'https://.../restaurants?sort_field={{ sort_field }}&sort_direction={{ sort_direction }}&limit={{ limit }}&offset={{ offset }}' \
 --header 'X-Nickname: {{ nickname }}' \
 --header 'X-Cohort: {{ cohort_number }}' \
 --header 'X-API-KEY: {{ api_key }}' 
@@ -38,7 +38,7 @@ curl --location --request GET 'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.ne
   
 Метод **GET /couriers** используется для того, чтобы получить список курьеров с учётом фильтров, переданных в запросе. Пример вызова:
 ```bash
-curl --location --request GET 'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.net/couriers?sort_field={{ sort_field }}&sort_direction={{ sort_direction }}&limit={{ limit }}&offset={{ offset }}' \
+curl --location --request GET 'https://.../couriers?sort_field={{ sort_field }}&sort_direction={{ sort_direction }}&limit={{ limit }}&offset={{ offset }}' \
 --header 'X-Nickname: {{ nickname }}' \
 --header 'X-Cohort: {{ cohort_number }}' \
 --header 'X-API-KEY: {{ api_key }}' 
@@ -50,7 +50,7 @@ curl --location --request GET 'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.ne
 
 Метод **GET /deliveries** используется для того, чтобы получить список совершённых доставок с учётом фильтров, переданных в запросе. Пример вызова:
 ```bash
-curl --location --request GET 'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.net/deliveries?restaurant_id={{ restaurant_id }}&from={{ from }}&to={{ to }}&sort_field={{ sort_field }}&sort_direction={{ sort_direction }}&limit={{ limit }}&offset={{ limit }}' \
+curl --location --request GET 'https://.../deliveries?restaurant_id={{ restaurant_id }}&from={{ from }}&to={{ to }}&sort_field={{ sort_field }}&sort_direction={{ sort_direction }}&limit={{ limit }}&offset={{ limit }}' \
 --header 'X-Nickname: {{ your_nickname }}' \
 --header 'X-Cohort: {{ your_cohort_number }}' \
 --header 'X-API-KEY: {{ api_key }}' 
