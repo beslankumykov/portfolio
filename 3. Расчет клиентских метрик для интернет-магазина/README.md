@@ -17,8 +17,8 @@ curl --location --request POST 'https://d5dg1j9kt695d30blp03.apigw.yandexcloud.n
 Метод **GET /get_report** используется для получения отчёта после того, как он будет сформирован на сервере. Пример вызова:
 ```bash
 curl --location --request GET 'https://d5dg1j9kt695d30blp03.apigw.yandexcloud.net/get_report?task_id={{ task_id }}' \
---header 'X-Nickname: {{ your_nickname }}' \
---header 'X-Cohort: {{ your_cohort_number }}' \
+--header 'X-Nickname: {{ nickname }}' \
+--header 'X-Cohort: {{ cohort_number }}' \
 --header 'X-Project: True' \
 --header 'X-API-KEY: {{ api_key }}' 
 ```
@@ -33,8 +33,8 @@ https://storage.yandexcloud.net/s3-sprint3/cohort_{{ cohort_number }}/{{ nicknam
 Метод **GET /get_increment** используется для получения данных за те даты, которые не вошли в основной отчёт. Дата в формате 2020-01-22T00:00:00. Пример вызова:
 ```bash
 curl --location --request GET 'https://d5dg1j9kt695d30blp03.apigw.yandexcloud.net/get_increment?report_id={{ report_id }}&date={{ date }}' \
---header 'X-Nickname: {{ your_nickname }}' \
---header 'X-Cohort: {{ your_cohort_number }}' \
+--header 'X-Nickname: {{ nickname }}' \
+--header 'X-Cohort: {{ cohort_number }}' \
 --header 'X-Project: True' \
 --header 'X-API-KEY: {{ api_key }}' 
 ```
