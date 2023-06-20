@@ -18,13 +18,13 @@
 
 ## Отправка тестового сообщения в Kafka с помощью kcat:
 ```bash
-kafkacat -b rc1b-2erh7b35n4j4v869.mdb.yandexcloud.net:9091
+kafkacat -b host:port
 -X security.protocol=SASL_SSL
 -X sasl.mechanisms=SCRAM-SHA-512
--X sasl.username="de-student"
--X sasl.password="ltcneltyn"
--X ssl.ca.location=/usr/local/share/ca-certificates/Yandex/YandexCA.crt
--t student.topic.cohort6.kubes00_in
+-X sasl.username="username"
+-X sasl.password="password"
+-X ssl.ca.location=/home/ca.crt
+-t topic_in
 -K:
 -P 
 ```
