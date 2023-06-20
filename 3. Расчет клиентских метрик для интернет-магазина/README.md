@@ -4,7 +4,7 @@
 
 Метод **POST /generate_report** инициализирует формирование отчёта. Пример вызова:
 ```bash
-curl --location --request POST 'https://d5dg1j9kt695d30blp03.apigw.yandexcloud.net/generate_report' \
+curl --location --request POST 'https://.../generate_report' \
 --header 'X-Nickname: {{ nickname }}' \
 --header 'X-Cohort: {{ cohort_number }}' \
 --header 'X-Project: True' \
@@ -16,7 +16,7 @@ curl --location --request POST 'https://d5dg1j9kt695d30blp03.apigw.yandexcloud.n
 
 Метод **GET /get_report** используется для получения отчёта после того, как он будет сформирован на сервере. Пример вызова:
 ```bash
-curl --location --request GET 'https://d5dg1j9kt695d30blp03.apigw.yandexcloud.net/get_report?task_id={{ task_id }}' \
+curl --location --request GET 'https://.../get_report?task_id={{ task_id }}' \
 --header 'X-Nickname: {{ nickname }}' \
 --header 'X-Cohort: {{ cohort_number }}' \
 --header 'X-Project: True' \
@@ -32,7 +32,7 @@ https://storage.yandexcloud.net/s3-sprint3/cohort_{{ cohort_number }}/{{ nicknam
 
 Метод **GET /get_increment** используется для получения данных за те даты, которые не вошли в основной отчёт. Дата в формате 2020-01-22T00:00:00. Пример вызова:
 ```bash
-curl --location --request GET 'https://d5dg1j9kt695d30blp03.apigw.yandexcloud.net/get_increment?report_id={{ report_id }}&date={{ date }}' \
+curl --location --request GET 'https://.../get_increment?report_id={{ report_id }}&date={{ date }}' \
 --header 'X-Nickname: {{ nickname }}' \
 --header 'X-Cohort: {{ cohort_number }}' \
 --header 'X-Project: True' \
