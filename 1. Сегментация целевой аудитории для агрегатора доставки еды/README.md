@@ -9,8 +9,7 @@
 4. Написать sql-запрос для заполнения витрины analysis.dm_rfm_segments на основе ранее подготовленных таблиц (datamart_query.sql).
 5. Перестроить представление analysis.Orders так, чтобы поле status соответствовало последнему по времени статусу из таблицы production.OrderStatusLog (orders_view.sql).
 
-
-## Проверка качества данных
+### Проверка качества данных
 1. Проверка таблицы с заказами на глубину:
 ```sql
 select DATE(DATE_TRUNC('month', order_ts)) as month, count(*) total_records from production.orders group by month order by month;
@@ -46,3 +45,10 @@ ALTER TABLE production.orders ADD CONSTRAINT orders_pkey PRIMARY KEY (order_id);
 ALTER TABLE production.orders ADD CONSTRAINT orders_check CHECK ((cost = (payment + bonus_payment)));
 ```
 
+## Стек технологий
+
+`Airflow` `Python` `PostgreSQL` `SQL`
+
+## Статус проекта
+
+Завершен.
