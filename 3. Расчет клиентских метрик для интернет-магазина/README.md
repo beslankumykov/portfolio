@@ -1,6 +1,8 @@
 # Расчет клиентских метрик для интернет-магазина
 
-## Спецификация API
+## Описание проекта
+
+### Спецификация API
 
 Метод **POST /generate_report** инициализирует формирование отчёта. Пример вызова:
 ```bash
@@ -12,7 +14,6 @@ curl --location --request POST 'https://.../generate_report' \
 --data-raw '' 
 ```
 Метод возвращает task_id — ID задачи, в результате выполнения которой должен сформироваться отчёт.
-
 
 Метод **GET /get_report** используется для получения отчёта после того, как он будет сформирован на сервере. Пример вызова:
 ```bash
@@ -46,8 +47,7 @@ curl --location --request GET 'https://.../get_increment?report_id={{ report_id 
 https://storage.yandexcloud.net/s3-sprint3/cohort_{{ cohort_number }}/{{ nickname }}/project/{{ increment_id }}/{{ file_name }}
 ```
 
-
-## Описание задачи
+### Этапы
 1. Учесть в витрине mart.f_sales статусы shipped и refunded, использовать только shipped.
 2. Провести миграцию схемы и данных в таблице mart.f_sales.
 3. Обновить пайплайн с учётом статусов и backward compatibility.
@@ -62,3 +62,11 @@ https://storage.yandexcloud.net/s3-sprint3/cohort_{{ cohort_number }}/{{ nicknam
 - returning_customers_revenue — доход с вернувшихся клиентов.
 - customers_refunded — количество возвратов клиентов. 
 5. Перезапустить пайплайн и убедиться, что после перезапуска не появилось дубликатов в витринах mart.f_sales и mart.f_customer_retention.
+
+## Стек технологий
+
+`Airflow` `Python` `PostgreSQL` `SQL` `REST-API` `S3`
+
+## Статус проекта
+
+Завершен.
